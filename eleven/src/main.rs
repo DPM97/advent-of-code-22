@@ -290,6 +290,5 @@ fn part_two(lines: &Vec<String>, rounds: i64) -> i64 {
         .map(|x| x.borrow().inspected_ct)
         .collect::<Vec<i64>>();
     cts.sort_by(|a, b| b.cmp(&a));
-    println!("{:?}", cts);
     cts[0] * cts[1]
 }
